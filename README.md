@@ -1,4 +1,4 @@
-# Khaerilari098
+# Khaerilaril098
 
 Selamat datang di repository saya.
 
@@ -15,4 +15,4 @@ Repository ini berisi berbagai project dan latihan pemrograman.
 
 ## Author
 
-Khaerilari098
+Khaerilaril098
