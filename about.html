@@ -3,31 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Nama Kamu</title>
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Tentang Saya</h1>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Profil</h2>
 
-    <p>
-        Nama saya adalah Nama Kamu.
-        Saya adalah mahasiswa yang memiliki ketertarikan
-        pada dunia pemrograman dan pengembangan website.
-    </p>
+    <section class="page-title">
+        <p>TENTANG SAYA</p>
+        <h1>About Me</h1>
+    </section>
 
-    <h2>Pendidikan</h2>
 
-    <p>
-        Mahasiswa Semester 3
-    </p>
+    <main class="about">
+
+        <div class="about-photo">
+            <img src="images/foto-saya.jpg" alt="Foto Saya">
+        </div>
+
+        <div class="about-text">
+
+            <h2>Halo, Saya Nama Kamu 👋</h2>
+
+            <p>
+                Saya adalah mahasiswa Universitas Negeri Makassar
+                yang memiliki minat dalam bidang teknologi informasi
+                dan pemrograman.
+            </p>
+
+            <p>
+                Saat ini saya sedang mempelajari berbagai dasar
+                pemrograman dan pengembangan website menggunakan
+                HTML, CSS, Python, dan C++.
+            </p>
+
+            <h3>Keahlian</h3>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Python</span>
+                <span>C++</span>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section class="education">
+
+        <h2>Pendidikan</h2>
+
+        <div class="education-box">
+
+            <img src="images/unm.jpg"
+                 alt="Universitas Negeri Makassar">
+
+            <div>
+                <p class="year">2024 - Sekarang</p>
+
+                <h3>Universitas Negeri Makassar</h3>
+
+                <p>
+                    Program Studi: Nama Program Studi
+                </p>
+
+                <p>
+                    Fakultas: Nama Fakultas
+                </p>
+
+                <p>
+                    Saat ini saya sedang menempuh pendidikan
+                    di Universitas Negeri Makassar.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Nama Kamu | Portfolio</p>
+    </footer>
 
 </body>
 </html>

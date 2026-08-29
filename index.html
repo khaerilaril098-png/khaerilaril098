@@ -3,36 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Nama Kamu</title>
+    <title>Portfolio | Nama Kamu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Nama Kamu</h1>
-        <p>Mahasiswa | Web Developer Pemula</p>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <main>
-        <h2>Halo, Saya Nama Kamu</h2>
+    <main class="home">
 
-        <p>
-            Saya adalah mahasiswa yang sedang mempelajari
-            pemrograman web dan teknologi informasi.
-        </p>
+        <div class="home-text">
+            <p class="welcome">SELAMAT DATANG DI PORTFOLIO SAYA</p>
 
-        <h2>Keahlian</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git dan GitHub</li>
-        </ul>
+            <h1>Halo, Saya<br>
+                <span>Nama Kamu</span>
+            </h1>
+
+            <h2>Mahasiswa Universitas Negeri Makassar</h2>
+
+            <p>
+                Saya adalah mahasiswa yang memiliki ketertarikan
+                terhadap dunia teknologi, pemrograman, dan
+                pengembangan website.
+            </p>
+
+            <div class="buttons">
+                <a href="about.html" class="btn">Tentang Saya</a>
+                <a href="contact.html" class="btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+
+
+        <div class="home-photo">
+            <img src="images/foto-saya.jpg" alt="Foto Saya">
+        </div>
+
     </main>
+
+
+    <footer>
+        <p>© 2026 Nama Kamu | Portfolio</p>
+    </footer>
 
 </body>
 </html>
