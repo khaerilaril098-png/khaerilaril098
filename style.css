@@ -1,33 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =========================================
+   CSS PORTOFOLIO
+   Mengikuti Materi Modul 4 - CSS Image
+========================================= */
 
-html {
-    scroll-behavior: smooth;
-}
+
+/* =========================================
+   1. DASAR HALAMAN
+========================================= */
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f8fafc;
-    color: #1e293b;
+    margin: 0;
+
+    /* background-color sesuai materi modul */
+    background-color: #f1f2ec;
+
+    color: #333333;
+
+    font-family: Arial, Verdana, sans-serif;
+
+    font-size: 16px;
 }
 
 
-/* NAVBAR */
+/* =========================================
+   2. NAVBAR
+========================================= */
 
 header {
-    background: #0f172a;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #0d1b3e;
+
+    padding: 15px 0;
+
+    border-bottom: 4px solid #2196f3;
 }
 
 nav {
-    max-width: 1100px;
+    width: 90%;
     margin: auto;
-    padding: 18px 25px;
 
     display: flex;
     justify-content: space-between;
@@ -36,342 +45,591 @@ nav {
 
 .logo {
     color: white;
-    font-size: 22px;
+
+    font-size: 24px;
+
     font-weight: bold;
 }
 
 nav ul {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav ul li a {
     color: white;
+
     text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
+
+    font-size: 16px;
 }
 
-nav ul li a:hover,
+nav ul li a:hover {
+    color: #4fc3f7;
+}
+
 nav ul li a.active {
-    color: #38bdf8;
+    color: #4fc3f7;
 }
 
 
-/* HOME */
+/* =========================================
+   3. HALAMAN HOME
+========================================= */
 
 .home {
+    width: 90%;
     max-width: 1100px;
-    min-height: 650px;
+
+    min-height: 550px;
+
     margin: auto;
-    padding: 80px 25px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-    gap: 60px;
+
+    gap: 50px;
 }
 
 .home-text {
-    flex: 1;
+    width: 55%;
 }
 
 .welcome {
-    color: #0284c7;
-    font-size: 14px;
+    color: #2196f3;
+
     font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+
+    font-size: 14px;
 }
 
 .home h1 {
-    font-size: 52px;
-    color: #0f172a;
-    margin-bottom: 10px;
+    font-size: 50px;
+
+    color: #0d1b3e;
+
+    margin: 10px 0;
 }
 
 .home h1 span {
-    color: #0284c7;
+    color: #2196f3;
 }
 
 .home h2 {
+    color: #555555;
+
     font-size: 22px;
-    color: #475569;
-    margin-bottom: 20px;
 }
 
-.home-text > p:not(.welcome) {
-    color: #64748b;
-    max-width: 550px;
-    margin-bottom: 30px;
+.home-text > p {
+    color: #666666;
+
+    line-height: 1.6;
 }
 
 
-/* BUTTON */
+/* =========================================
+   4. FOTO SAYA
+   width, height, border sesuai modul
+========================================= */
+
+.home-photo {
+    width: 300px;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    /* border sesuai materi modul */
+    border: 5px solid #2196f3;
+
+    border-radius: 15px;
+
+    background-color: white;
+}
+
+.home-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       opacity sesuai materi modul
+       Gambar sedikit transparan
+    */
+    opacity: 0.9;
+}
+
+
+/*
+   Efek hover seperti contoh
+   transparansi pada modul
+*/
+
+.home-photo img:hover {
+    opacity: 1.0;
+}
+
+
+/* =========================================
+   5. TOMBOL
+========================================= */
 
 .buttons {
-    display: flex;
-    gap: 15px;
+    margin-top: 25px;
 }
 
 .btn,
 .btn-outline {
     display: inline-block;
-    padding: 12px 22px;
-    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    margin-right: 10px;
+
     text-decoration: none;
+
+    border-radius: 5px;
+
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .btn {
-    background: #0284c7;
+    background-color: #2196f3;
+
     color: white;
+
+    border: 2px solid #2196f3;
 }
 
 .btn:hover {
-    background: #0369a1;
-    transform: translateY(-3px);
+    background-color: #0d1b3e;
+
+    border-color: #0d1b3e;
 }
 
 .btn-outline {
-    border: 2px solid #0284c7;
-    color: #0284c7;
+    color: #2196f3;
+
+    border: 2px solid #2196f3;
 }
 
 .btn-outline:hover {
-    background: #0284c7;
+    background-color: #2196f3;
+
     color: white;
 }
 
 
-/* FOTO */
-
-.home-photo {
-    width: 340px;
-    height: 340px;
-
-    border-radius: 50%;
-    overflow: hidden;
-
-    border: 8px solid white;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.home-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* PAGE TITLE */
+/* =========================================
+   6. JUDUL HALAMAN
+========================================= */
 
 .page-title {
-    text-align: center;
-    padding: 70px 20px 50px;
 
-    background: #e0f2fe;
+    /*
+       background-color sesuai modul
+    */
+    background-color: #dff3ff;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-bottom: 3px solid #2196f3;
 }
 
 .page-title p {
-    color: #0284c7;
+    color: #2196f3;
+
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .page-title h1 {
+    color: #0d1b3e;
+
     font-size: 40px;
-    color: #0f172a;
+
+    margin: 5px 0;
 }
 
 
-/* ABOUT */
+/* =========================================
+   7. HALAMAN ABOUT
+========================================= */
 
 .about {
+    width: 90%;
+
     max-width: 1000px;
+
     margin: auto;
-    padding: 70px 25px;
+
+    padding: 60px 0;
 
     display: flex;
+
     align-items: center;
-    gap: 60px;
+
+    gap: 50px;
 }
 
 .about-photo {
-    width: 320px;
-    height: 380px;
-    flex-shrink: 0;
+
+    /*
+       Mengatur lebar gambar
+       sesuai materi width
+    */
+    width: 300px;
+
+    /*
+       Mengatur tinggi gambar
+       sesuai materi height
+    */
+    height: 400px;
 
     overflow: hidden;
+
+    /*
+       Border seperti contoh modul
+    */
+    border: 4px solid #2196f3;
+
     border-radius: 15px;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    background-color: white;
 }
 
 .about-photo img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
+    /*
+       Transparansi gambar
+    */
+    opacity: 0.9;
+}
+
+
+/*
+   Gambar menjadi jelas ketika
+   mouse diarahkan ke gambar
+*/
+
+.about-photo img:hover {
+    opacity: 1.0;
+}
+
+
+.about-text {
+    flex: 1;
 }
 
 .about-text h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
+    color: #0d1b3e;
 
-.about-text p {
-    color: #64748b;
-    margin-bottom: 15px;
+    font-size: 28px;
 }
 
 .about-text h3 {
+    color: #2196f3;
+
     margin-top: 25px;
-    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #666666;
+
+    line-height: 1.6;
 }
 
 
-/* SKILLS */
+/* =========================================
+   8. KEAHLIAN
+========================================= */
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    margin-top: 15px;
 }
 
 .skills span {
-    background: #e0f2fe;
-    color: #0284c7;
+
+    display: inline-block;
+
+    background-color: #dff3ff;
+
+    color: #0879c9;
 
     padding: 8px 15px;
+
+    margin: 5px;
+
+    border: 1px solid #2196f3;
 
     border-radius: 20px;
 
     font-weight: bold;
-    font-size: 14px;
 }
 
 
-/* EDUCATION */
+/* =========================================
+   9. PENDIDIKAN
+========================================= */
 
 .education {
-    background: #e0f2fe;
-    padding: 70px 25px;
+
+    /*
+       Background color sesuai
+       materi CSS
+    */
+    background-color: #e8f5ff;
+
+    padding: 60px 20px;
 }
 
 .education > h2 {
+
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
+
+    color: #0d1b3e;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
 }
 
 .education-box {
-    max-width: 950px;
+
+    width: 90%;
+
+    max-width: 900px;
+
     margin: auto;
 
-    background: white;
-    padding: 30px;
+    padding: 25px;
 
-    border-radius: 15px;
+    background-color: white;
+
+    border: 3px solid #2196f3;
+
+    border-radius: 12px;
 
     display: flex;
-    align-items: center;
-    gap: 40px;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    align-items: center;
+
+    gap: 30px;
 }
 
+
+/* =========================================
+   10. FOTO UNIVERSITAS
+   width + height + border
+========================================= */
+
 .education-box img {
-    width: 280px;
+
+    width: 300px;
+
     height: 200px;
+
+    /*
+       Border sesuai Modul 4
+    */
+    border: 3px solid #2196f3;
+
+    border-radius: 10px;
 
     object-fit: cover;
 
-    border-radius: 10px;
+    /*
+       Transparansi
+    */
+    opacity: 0.9;
 }
 
+
+/*
+   Efek hover pada gambar UNM
+*/
+
+.education-box img:hover {
+
+    opacity: 1.0;
+}
+
+
 .year {
-    color: #0284c7;
+
+    color: #2196f3;
+
     font-weight: bold;
 }
 
 .education-box h3 {
+
+    color: #0d1b3e;
+
     font-size: 24px;
-    margin: 8px 0;
 }
 
 .education-box p {
-    color: #64748b;
-    margin-bottom: 8px;
+
+    color: #666666;
+
+    line-height: 1.5;
 }
 
 
-/* CONTACT */
+/* =========================================
+   11. CONTACT
+========================================= */
 
 .contact {
-    max-width: 1000px;
+
+    width: 90%;
+
+    max-width: 900px;
+
     margin: auto;
-    padding: 80px 25px;
+
+    padding: 70px 0;
 
     display: flex;
-    gap: 50px;
+
+    gap: 40px;
 }
 
 .contact-info,
 .contact-card {
+
     flex: 1;
 }
 
 .contact-info h2,
 .contact-card h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
+
+    color: #0d1b3e;
+
+    font-size: 28px;
 }
 
 .contact-info > p,
 .contact-card p {
-    color: #64748b;
-    margin-bottom: 25px;
+
+    color: #666666;
+
+    line-height: 1.6;
 }
 
 .contact-item {
-    margin-bottom: 20px;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    /*
+       Text dalam box
+    */
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border: 2px solid #2196f3;
+
+    border-radius: 8px;
 }
 
 .contact-item h3 {
-    color: #0284c7;
+
+    color: #2196f3;
+
+    margin: 0;
 }
 
 .contact-item p {
-    color: #64748b;
+
+    margin-bottom: 0;
 }
+
+
+/* =========================================
+   12. CONTACT CARD
+========================================= */
 
 .contact-card {
-    background: #e0f2fe;
-    padding: 40px;
-    border-radius: 15px;
+
+    background-color: #dff3ff;
+
+    padding: 30px;
+
+    border: 3px solid #2196f3;
+
+    border-radius: 12px;
 }
 
 
-/* FOOTER */
+/* =========================================
+   13. FOOTER
+========================================= */
 
 footer {
-    background: #020617;
-    color: #94a3b8;
+
+    background-color: #0d1b3e;
+
+    color: white;
 
     text-align: center;
+
     padding: 20px;
+
+    border-top: 3px solid #2196f3;
 }
 
 
-/* RESPONSIVE */
+/* =========================================
+   14. BACKGROUND IMAGE
+   Contoh penggunaan materi Modul 4
+
+   Jika ingin menggunakan gambar
+   sebagai background, aktifkan kode
+   di bawah ini.
+========================================= */
+
+/*
+body {
+    background-image: url('unm.jpg');
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-position: center;
+}
+*/
+
+
+/* =========================================
+   15. RESPONSIVE
+========================================= */
 
 @media (max-width: 750px) {
 
     nav {
         flex-direction: column;
+
         gap: 15px;
     }
 
@@ -380,33 +638,50 @@ footer {
     }
 
     .home {
+
         flex-direction: column-reverse;
+
         text-align: center;
+
+        padding: 50px 0;
+    }
+
+    .home-text {
+
+        width: 100%;
     }
 
     .home-photo {
-        width: 280px;
-        height: 280px;
-    }
 
-    .home h1 {
-        font-size: 40px;
-    }
+        width: 250px;
 
-    .buttons {
-        justify-content: center;
+        height: 330px;
     }
 
     .about {
-        flex-direction: column;
-    }
 
-    .education-box {
         flex-direction: column;
+
         text-align: center;
     }
 
+    .education-box {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .education-box img {
+
+        width: 100%;
+
+        max-width: 400px;
+    }
+
     .contact {
+
         flex-direction: column;
     }
+
 }
