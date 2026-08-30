@@ -599,52 +599,6 @@ footer {
 }
 
 
-/* =========================================
-   14. BACKGROUND IMAGE
-/* Foto background */
-body::before {
-    content: "";
-
-    position: fixed;
-
-    top: -20px;
-    left: -20px;
-
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-
-    background-image: url("unm.jpg");
-
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    background-size: cover;
-
-    filter: blur(8px);
-
-    opacity: 0.18;
-
-    z-index: -2;
-}
-
-/* Lapisan putih agar tulisan tetap mudah dibaca */
-body::after {
-    content: "";
-
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(255, 255, 255, 0.65);
-
-    z-index: -1;
-}
-
 
 /* =========================================
    15. RESPONSIVE
@@ -710,4 +664,24 @@ body::after {
     }
 
 }
+/* =========================================
+   BACKGROUND FOTO UNM
+========================================= */
 
+body {
+    margin: 0;
+    background-color: #f1f2ec;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.70),
+                        rgba(255, 255, 255, 0.70)),
+        url("unm.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
