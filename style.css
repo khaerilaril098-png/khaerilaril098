@@ -257,7 +257,8 @@ nav ul li a.active {
 
     padding: 40px 20px;
 
-    border-bottom: 3px solid #2196f3;
+    /* HAPUS GARIS BAWAH */
+    border-bottom: none;
 }
 
 .page-title p {
@@ -273,7 +274,6 @@ nav ul li a.active {
 
     margin: 5px 0;
 }
-
 
 /* =========================================
    7. HALAMAN ABOUT
