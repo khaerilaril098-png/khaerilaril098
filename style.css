@@ -127,7 +127,7 @@ nav ul li a.active {
 
     padding: 25px;
 
-    border-radius: 10px;
+    border-radius: none;
 }
 
 .welcome {
@@ -174,9 +174,9 @@ nav ul li a.active {
 
     overflow: hidden;
 
-    border: 5px solid #2196f3;
+    border: 3px solid #2196f3;
 
-    border-radius: 15px;
+    border-radius: none;
 
     background-color: white;
 }
