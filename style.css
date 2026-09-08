@@ -304,7 +304,7 @@ nav ul li a.active {
 
     border: none;
 
-    border-radius: 15px;
+    border-radius: none;
 
     background-color: white;
 }
@@ -330,7 +330,7 @@ nav ul li a.active {
 
     padding: 25px;
 
-    border-radius: 10px;
+    border-radius: none;
 }
 
 .about-text h2 {
